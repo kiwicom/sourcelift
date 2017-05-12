@@ -6451,3 +6451,9 @@ h3:after {
 h3.text-center:after {
   margin: 1.2em auto;
 }
+
+@media screen and (max-width: 800px) {
+  .navbar .button--apply {
+    display: none;
+  }
+}
