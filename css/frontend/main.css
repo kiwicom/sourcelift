@@ -2675,6 +2675,10 @@ tbody.collapse.show {
   display: flex;
 }
 
+.carousel-item.active {
+  flex-direction: column;
+}
+
 .carousel-item-next,
 .carousel-item-prev {
   position: absolute;
@@ -6167,8 +6171,26 @@ header {
 
 .carousel-item img {
   display: block;
-  max-width: 70%;
   height: auto;
+}
+
+.carousel-item * {
+  align-self: center;
+}
+
+.carousel-item a {
+  text-decoration: none !important;
+  color: initial;
+}
+
+.carousel-item .carousel-item-label {
+  font-weight: 100;
+  font-size: 3em;
+}
+
+.carousel-item .carousel-item-tagline {
+  font-size: 1.2em;
+  font-weight: 100;
 }
 
 @media (max-width: 575px) {
@@ -6456,4 +6478,8 @@ h3.text-center:after {
   .navbar .button--apply {
     display: none;
   }
+}
+
+.grey-text {
+  color: #bdbdbd;
 }
